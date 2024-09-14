@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    body{
+        background-color: lightgray
+        
+    }
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.apply_box{
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    margin-top: 50px;
+    border-radius: 20px;
+
+}
+.tittle{
+    font-size: 1.2rem;
+}
+.form_container{
+    margin-top: 21px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 30px;
+    
+}
+
+.form_control{
+    display: grid;
+    flex-direction: column;
+}
+label{
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:540;
+    font-style:inherit;
+    margin-bottom: 5px;
+}
+
+input,select,textarea{
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    font-style: var(.apply_box);
+}
+
+.button_container{
+    display: flex;
+    justify-content: flex-end;
+    /* text-align: center; */
+    /* background-color: blue; */
+    /* padding: 45px 45px; */
+}
+button{
+    background-color: aqua;
+    padding: 3px 5px;
+    border: transparent solid 3px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+
+}
+button:hover{
+    background-color: gray;
+    font-size: 1.4rem;
+    color: #ccc;
+    transition: 0.3s ease-out;
+
+}
+
+#krishna{
+    grid-column: 1 / span 2;
+}
+
+#krishna{
+    width: 100%;
+}
+
+@media (max-width:460px){
+    #krishna{
+    grid-column: 1 / span 1;
+    }
+};
